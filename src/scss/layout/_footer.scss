@@ -1,0 +1,19 @@
+.footer{
+    background-color: $color-w;
+    color:$color-bdark;
+    margin: 0.5rem;
+    background-color: antiquewhite;
+   
+    &__list{
+        display: flex;
+        justify-content: space-between;
+       align-items: flex-end;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        @media all and (min-width: 768px) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            
+    }
+    }
+}

@@ -1,0 +1,44 @@
+h1 {
+    font-size:3.2em;
+  }
+  .sutitle{
+    @media all and (min-width: 768px) {
+       
+        font-size: 2rem;
+}
+  }
+  .nav{
+   height: 7vh;
+   justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    &__icon{
+        color: $color-bdark;
+        font-size: 2rem;
+       
+        
+    }
+    &__list{
+        display: flex;
+       align-items: center;
+       justify-content: space-between;
+        color: $color-bdark;
+        gap: 1rem;
+        &-section{
+            @media all and (min-width: 768px) {
+                padding: 1rem;
+                font-size: 1.5rem;
+        }
+    }
+            
+    }
+  }
+  .title, subtitle{
+    text-align: center;
+  }
+
+  

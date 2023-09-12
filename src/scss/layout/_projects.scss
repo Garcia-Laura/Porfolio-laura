@@ -4,13 +4,13 @@
         grid-template-columns: 1fr 1fr;
 
       }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 1000px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 
       }
 }
-.projects-title{
+.title{
     color: #f4f4f4; text-align: center;
 }
 .box-project{
@@ -46,18 +46,32 @@
     }
     &__breaking-bad{
         background-image: url(../images/breaking-bad.jpg);
+        @media all and (min-width: 768px) {
+            background-position: 50%  ;
+            
+    
+          }
     }
     &__anonymus{
         background-image: url(../images/cover.jpeg);
     }
     &__juego{
         background-image: url(../images/anillos-del-poder.jpeg);
+        @media all and (min-width: 768px) {
+            background-position: 100%  ;
+          }
     }
     &__lista{
         background-image: url(../images/lista.jpeg);
+        @media all and (min-width: 768px) {
+            background-position: 100%  ;
+          }
     }
     &__rickmorty{
         background-image: url(../images/rickmorty.png);
+        @media all and (min-width: 768px) {
+            background-position: 40%  ;
+          }
     }
     
     &__icon{

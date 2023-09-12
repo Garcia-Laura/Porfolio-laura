@@ -121,6 +121,9 @@
   margin: 0.5rem;
   background-color: #283148;
   height: 5vh; }
+  @media all and (min-width: 768px) {
+    .footer {
+      height: 3vh; } }
   .footer__list {
     display: flex;
     justify-content: space-between;
@@ -324,6 +327,70 @@
   background: linear-gradient(135deg, #4a6572 0%, #283148 100%);
   color: white; }
 
+.main-contacto {
+  height: 80vh; }
+
+.main-contacto p {
+  color: #FFF;
+  text-align: center;
+  margin: 10px; }
+
+.social-links, .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center; }
+
+.social-btn svg {
+  height: 24px;
+  width: 24px; }
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px; }
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px; }
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px; }
+
+#twitter svg {
+  fill: #1da1f2; }
+
+#linkedin svg {
+  fill: #0e76a8; }
+
+#github {
+  fill: #333; }
+
+.mail {
+  cursor: pointer;
+  color: #FFF; }
+
+.mail:hover {
+  color: #81e9ae; }
+
+.span {
+  color: #4a6572; }
+
 body, html {
   margin: 0;
   padding: 0;
@@ -400,12 +467,12 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr; } }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1000px) {
   .box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; } }
 
-.projects-title {
+.title {
   color: #f4f4f4;
   text-align: center; }
 
@@ -434,14 +501,26 @@ body, html {
         height: 240px; } }
   .box-project__breaking-bad {
     background-image: url(../images/breaking-bad.jpg); }
+    @media all and (min-width: 768px) {
+      .box-project__breaking-bad {
+        background-position: 50%; } }
   .box-project__anonymus {
     background-image: url(../images/cover.jpeg); }
   .box-project__juego {
     background-image: url(../images/anillos-del-poder.jpeg); }
+    @media all and (min-width: 768px) {
+      .box-project__juego {
+        background-position: 100%; } }
   .box-project__lista {
     background-image: url(../images/lista.jpeg); }
+    @media all and (min-width: 768px) {
+      .box-project__lista {
+        background-position: 100%; } }
   .box-project__rickmorty {
     background-image: url(../images/rickmorty.png); }
+    @media all and (min-width: 768px) {
+      .box-project__rickmorty {
+        background-position: 40%; } }
   .box-project__icon {
     justify-content: space-around;
     display: flex;

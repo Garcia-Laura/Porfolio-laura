@@ -4,6 +4,10 @@
     margin: 0.5rem;
  background-color: $background;
  height: 5vh;
+ @media all and (min-width: 768px) {
+    height: 3vh;
+    
+}
    
     &__list{
         display: flex;

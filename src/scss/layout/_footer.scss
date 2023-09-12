@@ -1,8 +1,9 @@
 .footer{
-    background-color: $color-w;
-    color:$color-bdark;
+  
+    color:$color-w;
     margin: 0.5rem;
-    background-color: antiquewhite;
+ background-color: $background;
+ height: 5vh;
    
     &__list{
         display: flex;

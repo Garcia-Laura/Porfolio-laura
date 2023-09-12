@@ -1,17 +1,32 @@
 <header>
-    <nav class="nav"> 
-      <a title="Home"  href="../index.html" class="nav__icon"> <i class="fa-solid fa-house"></i></a>
-      <ul class="nav__list">
-        <a class="nav__list-section" title="Ir a Sobre mí"  href="../sobre-mi.html">
-        <li> Sobre mí</li> 
+  <nav class="nav"> 
+    <a title="Home"  href="../index.html" class="nav__icon button"> <i class="fa-solid fa-house"></i></a>
+
+    <label class="hamburger">
+      <input type="checkbox">
+      <svg viewBox="0 0 32 32">
+        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+        <path class="line" d="M7 16 27 16"></path>
+      </svg>
+    </label>
+
+    <ul class="nav__list">
+
+      <li class="nav__list-section"> <a class="button" title="Ir a Sobre mí"  href="../sobre-mi.html">
+        Sobre mí </a>
+      <span></span>
+    </li> 
+   
+
+       <li class="nav__list-section ">   <a  class="button" title="Ir a Proyectos"  href="../proyectos.html">
+      Proyectos
       </a>
-         <a  class="nav__list-section"title="Ir a Proyectos"  href="../proyectos.html">
-          <li> Proyectos</li>
-        </a>
-        <a   class="nav__list-section" title="Ir a Contacto"  href="../contacto.html">
-          <li> Contacto </li>
-        </a>
-        
-      </ul>
-    </nav>
-  </header>
+      <span></span></li>
+     <li class="nav__list-section ">  <a  class="button"   title="Ir a Contacto"  href="../contacto.html">
+        Contacto 
+      </a><span></span>
+    </li>
+      
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,82 @@
+.box{
+    @media all and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+      @media all and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+      }
+}
+.projects-title{
+    color: #f4f4f4; text-align: center;
+}
+.box-project{
+    width: 50%;
+   
+    margin-left: auto;
+    margin-right: auto;
+  border-radius: 20px;
+ margin-top: 10px;
+    background: linear-gradient(to bottom right, #f4f4f4, #c3c3c3bb);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  @media all and (min-width: 768px) {
+    width: 60%;
+    
+
+  }
+  
+    &__img{
+   
+    height: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 0 0; 
+    @media all and (min-width: 768px) {
+        height: 240px;
+
+      }
+    }
+    &__breaking-bad{
+        background-image: url(../images/breaking-bad.jpg);
+    }
+    &__anonymus{
+        background-image: url(../images/cover.jpeg);
+    }
+    &__juego{
+        background-image: url(../images/anillos-del-poder.jpeg);
+    }
+    &__lista{
+        background-image: url(../images/lista.jpeg);
+    }
+    &__rickmorty{
+        background-image: url(../images/rickmorty.png);
+    }
+    
+    &__icon{
+        justify-content: space-around;
+        display: flex;
+        margin-top: 10px;
+        
+       
+        a i{
+            color: #283148;
+           
+ 
+        }
+        a i:hover{
+color: white;
+font-size: 1.5rem;
+        }
+    }
+}
+.box-project:hover{
+    transform: scale(1.05);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre mí</title>
     <link
   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100&family=Roboto&family=Roboto+Slab:wght@700&display=swap"
   rel="stylesheet">
@@ -20,22 +20,37 @@
 </head>
 <body>
     <header>
-        <nav class="nav"> 
-          <a title="Home"  href="../index.html" class="nav__icon"> <i class="fa-solid fa-house"></i></a>
-          <ul class="nav__list">
-            <a class="nav__list-section" title="Ir a Sobre mí"  href="../sobre-mi.html">
-            <li> Sobre mí</li> 
+      <nav class="nav"> 
+        <a title="Home"  href="../index.html" class="nav__icon button"> <i class="fa-solid fa-house"></i></a>
+
+        <label class="hamburger">
+          <input type="checkbox">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+
+        <ul class="nav__list">
+
+          <li class="nav__list-section"> <a class="button" title="Ir a Sobre mí"  href="../sobre-mi.html">
+            Sobre mí </a>
+          <span></span>
+        </li> 
+       
+
+           <li class="nav__list-section ">   <a  class="button" title="Ir a Proyectos"  href="../proyectos.html">
+          Proyectos
           </a>
-             <a  class="nav__list-section"title="Ir a Proyectos"  href="../proyectos.html">
-              <li> Proyectos</li>
-            </a>
-            <a   class="nav__list-section" title="Ir a Contacto"  href="../contacto.html">
-              <li> Contacto </li>
-            </a>
-            
-          </ul>
-        </nav>
-      </header>
+          <span></span></li>
+         <li class="nav__list-section ">  <a  class="button"   title="Ir a Contacto"  href="../contacto.html">
+            Contacto 
+          </a><span></span>
+        </li>
+          
+        </ul>
+      </nav>
+    </header>
     <main class="about-me_main"> 
         <h1 class="about_me"> Sobre mí</h1>
         <div class="about_me__text">
@@ -44,15 +59,18 @@
            <p > ¡Hola mundo! Soy Laura y soy programadora web junior.
             Tras varios años en el sector de la sanidad decidí dar un giro de 360º a mi vida laboral y buscar mi verdadera vocación.</p>
 
-          <span>  Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida (confucio).
-        </span>
-           <p class=""> En septiembre 2022 programé mi vida adentrandome en el mundo tech, y profundizando en programación web. ¿Qué significa programar para mí? Programar es la chispa que le faltaba a mi vida, es aire fresco, es ilusión. Me he picado la mosca de la programación y ya no puedo parar, es estar constantemente enganchada.</p>
-           <span>   Busca tu felicidad y aprende a priorizarla.  </span>
+         <blockquote> <p> <em> Elige un trabajo que te guste y no tendrás que trabajar ni un día de tu vida. </em></p>
+          <cite> Confucio   </cite>.</blockquote>
+        
+           <p class=""> En septiembre 2022 programé mi vida adentrándome en el mundo tech, profundizando en programación web. Me formé en Adalab, donde adquirí habilidades para iniciarme en esta aventura.   </p>
+           <p> Después de dicha formación me inicié laboralmente donde pude poner en prácticas todos los conocimientos adquiridos además de asentar otros conceptos.</p>
+           <p> Soy una persona curiosa, inquieta y perfeccionista. Gracias a estas cualidades me han llevado a estar donde estoy ahora y me siento muy orgullosa. Me encantan los retos y estar aprendiendo de forma continúa, por ello busco un entorno donde poder exprimir al máximo estas cualidades.</p>
+           
           
         </article>
       
           <div class="about_me__photo">
-            <img src="../images/laura.jpeg" alt="laura">
+             
           </div>
 
         </div>

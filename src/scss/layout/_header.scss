@@ -97,6 +97,8 @@
     cursor: pointer;
     display: flex;
     justify-content: right;
+    z-index: 4;
+    position: relative;
     @media all and (min-width: 768px) {
       display: none;
 }

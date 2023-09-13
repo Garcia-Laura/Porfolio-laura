@@ -1,5 +1,6 @@
 'use strict';
-
+const menu = document.querySelector(".js_menu");
+const wrapper = document.querySelector(".js-wrapper")
 console.log('>> Ready :)');
 
 
@@ -46,4 +47,12 @@ function start() {
 
 createGrid();
 setInterval(updateGrid, 10000);
+
+function handleClick(ev){
+	ev.preventDefault();
+	console.log("click");
+	wrapper.classList.toggle("hidden");
+}
+menu.addEventListener("click", handleClick);
+
 //# sourceMappingURL=main.js.map

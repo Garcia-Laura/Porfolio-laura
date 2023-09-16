@@ -1,8 +1,8 @@
 'use strict';
-const menu = document.querySelector(".js_menu");
-const wrapper = document.querySelector(".js-wrapper")
-console.log('>> Ready :)');
 
+
+console.log('>> Ready :)');
+const wrappers = document.querySelectorAll(".js-wrapper")
 
 const emojis_setTech = ["💻", "🖥️", "📱", "⌨️", "💾", "🖱️", "🕹️", "🔌", "⌨️"];
 
@@ -48,9 +48,36 @@ function start() {
 createGrid();
 setInterval(updateGrid, 10000);
 
-function handleClick(ev){
-	ev.preventDefault();
-	console.log("click");
-	wrapper.classList.toggle("hidden");
+ function handleClick(ev){
+ 	ev.preventDefault();
+ 	
+	console.log("hola dos")
+ }
+
+ function addEventIcon(){
+	const menus = document.querySelectorAll(".js_menu");
+ 	for (const eachMenus of menus){
+ 		eachMenus.addEventListener("click", handleClick);
+ 	}
+	 console.log("click");
 }
-menu.addEventListener("click", handleClick);
+
+
+// function handleClick (){
+	
+// 	console.log("click");
+// 	wrapper.classList.toggle("hidden");	
+// 	console.log("click")
+// }
+// handleClick();
+
+// const buttons = document.querySelectorAll(".js_menu");
+// buttons.forEach(button => {
+// 	button.addEventListener("click", () =>{
+// 		const modalId = button.dataset.modalId
+// 		const modal = document.getElementById(modalId)
+// 		modal.classList.toggle("hidden");
+// 		console.log("click");
+// 	})
+	
+// })

@@ -121,7 +121,7 @@
 .menu-mobile {
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 35px;
   cursor: pointer; }
   @media all and (min-width: 768px) {
     .menu-mobile {
@@ -130,6 +130,10 @@
 .menu-mobile li a i {
   color: white;
   font-size: 1.2rem; }
+
+.menu-nav ul li .active {
+  transition: all 0.5s ease-out;
+  color: red; }
 
 .footer {
   color: white;
@@ -291,7 +295,7 @@
 .menu-mobile {
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 35px;
   cursor: pointer; }
   @media all and (min-width: 768px) {
     .menu-mobile {
@@ -300,6 +304,10 @@
 .menu-mobile li a i {
   color: white;
   font-size: 1.2rem; }
+
+.menu-nav ul li .active {
+  transition: all 0.5s ease-out;
+  color: red; }
 
 .about-me_main {
   background: linear-gradient(#283148, white, #283148);
@@ -527,7 +535,8 @@ body, html {
 
 .title {
   color: #f4f4f4;
-  text-align: center; }
+  text-align: center;
+  margin-top: 15px; }
 
 .box-project {
   width: 50%;
@@ -552,6 +561,15 @@ body, html {
     @media all and (min-width: 768px) {
       .box-project__img {
         height: 240px; } }
+  .box-project__contador {
+    background-image: url(../images/contador-letras.png);
+    background-position: 60% 12%; }
+    @media all and (min-width: 768px) {
+      .box-project__contador {
+        background-position: 8% 5%; } }
+  .box-project__generador {
+    background-image: url(../images/generador.png);
+    background-position: 8% 5%; }
   .box-project__breaking-bad {
     background-image: url(../images/breaking-bad.jpg); }
     @media all and (min-width: 768px) {

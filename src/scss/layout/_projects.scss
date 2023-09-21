@@ -12,6 +12,7 @@
 }
 .title{
     color: #f4f4f4; text-align: center;
+    margin-top: 15px;
 }
 .box-project{
     width: 50%;
@@ -44,6 +45,20 @@
 
       }
     }
+    &__contador{
+      background-image: url(../images/contador-letras.png);
+      background-position: 60% 12% ;
+      @media all and (min-width: 768px) {
+        background-position:8% 5%  ;
+        
+
+      }
+  }
+    &__generador{
+      background-image: url(../images/generador.png);
+      background-position: 8% 5% ;
+     
+  }
     &__breaking-bad{
         background-image: url(../images/breaking-bad.jpg);
         @media all and (min-width: 768px) {

@@ -458,6 +458,7 @@ body, html {
   height: 100%;
   width: 100%;
   background-color: #283148;
+  overflow: hidden;
   font-family: 'Roboto', sans-serif; }
 
 .grid-container {
@@ -522,6 +523,9 @@ body, html {
 
 .card button:hover {
   background: #33e4b5; }
+
+.body-projects {
+  overflow-y: scroll; }
 
 @media all and (min-width: 768px) {
   .box {
